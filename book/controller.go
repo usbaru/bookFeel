@@ -10,7 +10,7 @@ type Controller struct {
 }
 
 func (c *Controller) GetBook(w http.ResponseWriter, r *http.Request) {
-	book := c.Repository.GetBookByTitle()
+	book := c.Repository.GetBookByTitle("danial")
 	data, _ := json.Marshal(book)
 	w.Header().Set("Content-Type", "application/json; charset=UTF-8")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
