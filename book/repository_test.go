@@ -1,3 +1,7 @@
 package book
 
-type Repository struct{}
+import "testing"
+
+func TestGetBookTitle(t *testing.T) {
+
+}
